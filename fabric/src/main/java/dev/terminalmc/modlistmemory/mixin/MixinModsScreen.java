@@ -44,7 +44,8 @@ public class MixinModsScreen {
             at = @At(
                     value = "INVOKE",
                     target = "Lcom/terraformersmc/modmenu/gui/ModsScreen;updateSelectedEntry(Lcom/terraformersmc/modmenu/gui/widget/entries/ModListEntry;)V"
-            )
+            ),
+            require = 0
     )
     private void wrapUpdatedSelectedEntry(
             ModsScreen instance,
